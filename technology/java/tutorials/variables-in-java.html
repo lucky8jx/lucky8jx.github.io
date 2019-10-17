@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Java变量 | lucky8jx</title>
+    <meta name="description" content="">
+    <link rel="icon" href="/img/logo.jpeg">
+    
+    <link rel="preload" href="/assets/css/0.styles.7dfd0c4f.css" as="style"><link rel="preload" href="/assets/js/app.5adc1e86.js" as="script"><link rel="preload" href="/assets/js/6.4cd6951d.js" as="script"><link rel="preload" href="/assets/js/21.f98b5dc7.js" as="script"><link rel="prefetch" href="/assets/js/10.cc682177.js"><link rel="prefetch" href="/assets/js/11.47642b5b.js"><link rel="prefetch" href="/assets/js/12.3f25b8aa.js"><link rel="prefetch" href="/assets/js/13.fac59334.js"><link rel="prefetch" href="/assets/js/14.e5c16d6a.js"><link rel="prefetch" href="/assets/js/15.e0fc1782.js"><link rel="prefetch" href="/assets/js/16.75162181.js"><link rel="prefetch" href="/assets/js/17.e6a1e870.js"><link rel="prefetch" href="/assets/js/18.f4d03e21.js"><link rel="prefetch" href="/assets/js/19.e22187ee.js"><link rel="prefetch" href="/assets/js/2.99851fc7.js"><link rel="prefetch" href="/assets/js/20.5645eb85.js"><link rel="prefetch" href="/assets/js/22.ffbcb595.js"><link rel="prefetch" href="/assets/js/23.3a54d90f.js"><link rel="prefetch" href="/assets/js/3.14ac67ba.js"><link rel="prefetch" href="/assets/js/4.21c4c4b0.js"><link rel="prefetch" href="/assets/js/5.340cf26a.js"><link rel="prefetch" href="/assets/js/7.7059d05c.js"><link rel="prefetch" href="/assets/js/8.aaf9a9e3.js"><link rel="prefetch" href="/assets/js/9.a2f5ca16.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7dfd0c4f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.jpeg" alt="lucky8jx" class="logo"> <span class="site-name can-hide">lucky8jx</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/timeLine/" class="nav-link">首页</a></div><div class="nav-item"><a href="/technology/" class="nav-link router-link-active">技术</a></div><div class="nav-item"><a href="/tags/" class="nav-link">标签库</a></div> <!----></nav> <div style="margin-left:20px;margin-right:20px;">
+   音乐
+  <div role="switch" class="el-switch"><input type="checkbox" name="" true-value="true" class="el-switch__input"><!----><span class="el-switch__core" style="width:40px;"></span><!----></div> <audio loop="loop"><source src="/assets/media/yishengyouni.97948df4.mp3" type="audio/mpeg"></audio></div></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/timeLine/" class="nav-link">首页</a></div><div class="nav-item"><a href="/technology/" class="nav-link router-link-active">技术</a></div><div class="nav-item"><a href="/tags/" class="nav-link">标签库</a></div> <!----></nav>  <!----> </div> <div class="page"> <div class="content"><h1 id="java变量"><a href="#java变量" aria-hidden="true" class="header-anchor">#</a> Java变量</h1> <p>一个变量就是一个能够存储变化的值的名称。比如 <code>int i = 10;</code> 其中变量名称是<strong>i</strong>，变量中存储的值是10；int是数据类型，表示这个变量可以存储整型数值。在后面的教程中我们会继续详细讲解数据类型，这里我们就先讲解变量。</p> <h2 id="java中如何声明变量"><a href="#java中如何声明变量" aria-hidden="true" class="header-anchor">#</a> Java中如何声明变量</h2> <p>使用下面的语法来声明变量：</p> <div class="language- extra-class"><pre class="language-text"><code>data_type variable_name = value;
+</code></pre></div><p>在Java中值是可选的，你可以先声明变量然后再对变量进行赋值。</p> <p>比如这里num是变量，int是数据类型。我们先不管数据类型，后面章节将详细讲解数据类型，你只要知道数据类型使得变量num可以存储整型数值就好。你也可以阅读<a href>数据类型</a>，但是我的建议是先阅读完本节内容再继续后面的。</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">int</span> num<span class="token punctuation">;</span>
+</code></pre></div><p>同样的我们也可以在声明的同时对变量进行赋值，像下面这样：</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">char</span> ch <span class="token operator">=</span> <span class="token string">'A'</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> number <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+</code></pre></div><p>或者也可以这样：</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">char</span> ch<span class="token punctuation">;</span>
+<span class="token keyword">int</span> number<span class="token punctuation">;</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+ch <span class="token operator">=</span> <span class="token string">'A'</span><span class="token punctuation">;</span>
+number <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="java中变量的命名规范"><a href="#java中变量的命名规范" aria-hidden="true" class="header-anchor">#</a> Java中变量的命名规范</h2> <ol><li>变量名中不能包含空格，如：变量名中包含空格<code>int num ber = 100;</code>是错误的。</li> <li>变量名可以使用像$和_这样的特殊字符作为开头。</li> <li>相对标准的变量命名时是以小写字母开头，如<code>int number</code>;对于包含多个单词的变量名可以这样命名：<code>int smallNumber; int bigNumber;</code>（第二个单词首字母大写）。</li> <li>在Java中变量名是大小写敏感的。</li></ol> <h2 id="java中变量的种类。"><a href="#java中变量的种类。" aria-hidden="true" class="header-anchor">#</a> Java中变量的种类。</h2> <p>Java中有三种不同的变量。</p> <p>1)局部变量2)静态（类）变量3)实例变量</p> <h3 id="静态（类）变量"><a href="#静态（类）变量" aria-hidden="true" class="header-anchor">#</a> 静态（类）变量</h3> <p>静态变量也被称为类变量，因为它关联的是类并且所有类的实例共享这个变量。比如，我可以创建一个类的3个实例对象来访问这个静态变量，它们是共享这个变量的，当某个对象改变了这个变量就会影响到其他对象。</p> <h4 id="静态变量的例子"><a href="#静态变量的例子" aria-hidden="true" class="header-anchor">#</a> 静态变量的例子</h4> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StaticVarExample</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span> myClassVar<span class="token operator">=</span><span class="token string">&quot;class or static variable&quot;</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span> args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">StaticVarExample</span> obj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StaticVarExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">StaticVarExample</span> obj2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StaticVarExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">StaticVarExample</span> obj3 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StaticVarExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//All three will display &quot;class or static variable&quot;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>myClassVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj2<span class="token punctuation">.</span>myClassVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj3<span class="token punctuation">.</span>myClassVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//changing the value of static variable using obj2</span>
+    obj2<span class="token punctuation">.</span>myClassVar <span class="token operator">=</span> <span class="token string">&quot;Changed Text&quot;</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//All three will display &quot;Changed Text&quot;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>myClassVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj2<span class="token punctuation">.</span>myClassVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj3<span class="token punctuation">.</span>myClassVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>输出：</strong></p> <div class="language- extra-class"><pre class="language-text"><code>class or static variable
+class or static variable
+class or static variable
+Changed Text
+Changed Text
+Changed Text
+</code></pre></div><p>正如上面看到的不管哪个实例访问这个静态变量输出都是一样的。因此我们可以不用通过实例来访问静态变量，就像下面这样：</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myClassVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>注意：只有静态变量才可以这样访问。对于实例变量和局部变量是不行的。</p></blockquote> <h3 id="实例变量"><a href="#实例变量" aria-hidden="true" class="header-anchor">#</a> 实例变量</h3> <p>对于每个类的实例（对象）都有自己的一份实例变量。不像静态变量，每个实例有自己独有的一份实例变量的拷贝。当我们通过对象obj2改变实例变量的值，只有对象obj2中的值发生改变，其他对象中的值则不变。这也说名每个实例都有一份实例变量的拷贝。</p> <h4 id="实例变量的例子"><a href="#实例变量的例子" aria-hidden="true" class="header-anchor">#</a> 实例变量的例子</h4> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">InstanceVarExample</span> <span class="token punctuation">{</span>
+  <span class="token class-name">String</span> myInstanceVar <span class="token operator">=</span> <span class="token string">&quot;instance variable&quot;</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span> args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">InstanceVarExample</span> obj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">InstanceVarExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">InstanceVarExample</span> obj2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">InstanceVarExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">InstanceVarExample</span> obj3 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">InstanceVarExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>myInstanceVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj2<span class="token punctuation">.</span>myInstanceVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj3<span class="token punctuation">.</span>myInstanceVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    obj2<span class="token punctuation">.</span>myInstanceVar <span class="token operator">=</span> <span class="token string">&quot;Changed Text&quot;</span><span class="token punctuation">;</span>
+
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>myInstanceVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj2<span class="token punctuation">.</span>myInstanceVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj3<span class="token punctuation">.</span>myInstanceVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>输出：</strong></p> <div class="language- extra-class"><pre class="language-text"><code>instance variable
+instance variable
+instance variable
+instance variable
+Changed Text
+instance variable
+</code></pre></div><h3 id="局部变量"><a href="#局部变量" aria-hidden="true" class="header-anchor">#</a> 局部变量</h3> <p>在类的方法中声明的变量就是局部变量。局部变量的作用域只限于方法中，也就意味着你不能在方法之外改变和访问它。</p> <p>在下面的例子中，为了说明局部变量的作用域，我声明了一个实例变量和一个局部变量，两个变量的变量名相同。</p> <h4 id="局部变量的例子"><a href="#局部变量的例子" aria-hidden="true" class="header-anchor">#</a> 局部变量的例子</h4> <div class="language-java extra-class"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">VariableExample</span> <span class="token punctuation">{</span>
+  <span class="token comment">// instance variable</span>
+  <span class="token keyword">public</span> <span class="token class-name">String</span> myVar <span class="token operator">=</span> <span class="token string">&quot;instance variable&quot;</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// local variable</span>
+    <span class="token class-name">String</span> myVar <span class="token operator">=</span> <span class="token string">&quot;Inside Method&quot;</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>myVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span> args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Creating object</span>
+    <span class="token class-name">VariableExample</span> obj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VariableExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/* We are calling the method, that changes the
+     * value of myVar. We are displaying myVar again after
+     * the method call, to demonstrate that the local
+     * variable scope is limited to the method itself.
+     */</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;Calling Method&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    obj<span class="token punctuation">.</span><span class="token function">myMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>obj<span class="token punctuation">.</span>myVar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>输出：</strong></p> <div class="language- extra-class"><pre class="language-text"><code>Calling Method
+Inside Method
+instance variable
+</code></pre></div><blockquote><p>如果我没有声明实例变量，只在方法中声明了局部变量。然后写上<code>System.out.println(obj.myVar);</code>这条语句将会抛出编译错误。因为在方法之外你不能访问局部变量。</p></blockquote> <p>进入下一教程之前可以先阅读相关的<a href>java例子</a>:</p> <ol><li><a href>查找一个字符的ASCII值</a></li> <li><a href>两个数值相乘</a></li> <li><a href>计算三角形的面积</a></li></ol></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">10/18/2019, 12:09:36 AM</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/technology/java/tutorials/first-java-program.html" class="prev">
+          第一个java程序
+        </a></span> <!----></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.5adc1e86.js" defer></script><script src="/assets/js/6.4cd6951d.js" defer></script><script src="/assets/js/21.f98b5dc7.js" defer></script>
+  </body>
+</html>
