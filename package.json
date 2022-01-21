@@ -1,0 +1,17 @@
+{
+  "name": "vuepress-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.9.6",
+    "vuepress-theme-mini": "^3.1.1"
+  }
+}

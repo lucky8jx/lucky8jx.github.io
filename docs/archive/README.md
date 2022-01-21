@@ -1,0 +1,4 @@
+---
+layout: Archive
+postsDir: ^/posts/.
+---
