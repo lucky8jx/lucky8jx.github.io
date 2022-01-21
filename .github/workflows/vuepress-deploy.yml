@@ -1,0 +1,17 @@
+name: Build and Deploy
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+
+    - name: my-blog
+      uses: lucky8jx/my-blog@main
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        TARGET_REPO: lucky8jx/my-blog
+        TARGET_BRANCH: main
+        BUILD_SCRIPT: yarn && yarn build
+        BUILD_DIR: blog/.vuepress/dist/
