@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用 vuepress 搭建简单博客 | 记</title>
+    <meta name="generator" content="VuePress 1.9.6">
+    <link rel="icon" href="/img/logo.jpeg">
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.81f7f50d.css" as="style"><link rel="preload" href="/assets/js/app.4472aba4.js" as="script"><link rel="preload" href="/assets/js/layout-Layout.f74fa874.js" as="script"><link rel="preload" href="/assets/js/vendors~layout-Archive~layout-Layout~layout-Page~layout-Pager.3db1fef9.js" as="script"><link rel="preload" href="/assets/js/page-0df79d92.7ebe87ed.js" as="script"><link rel="prefetch" href="/assets/js/12.c167ec66.js"><link rel="prefetch" href="/assets/js/13.3af5bab1.js"><link rel="prefetch" href="/assets/js/14.30df677c.js"><link rel="prefetch" href="/assets/js/15.9a1c9675.js"><link rel="prefetch" href="/assets/js/16.aeca97a9.js"><link rel="prefetch" href="/assets/js/layout-Archive.2e0e6a7e.js"><link rel="prefetch" href="/assets/js/layout-NotFound.9b0b14be.js"><link rel="prefetch" href="/assets/js/layout-Pager.20b37558.js"><link rel="prefetch" href="/assets/js/page-4549e401.6bd8fc60.js"><link rel="prefetch" href="/assets/js/page-97ba95b8.2fff9755.js"><link rel="prefetch" href="/assets/js/page-c6a2dbaa.2fa8a286.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.a8952f99.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.81f7f50d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-3edbe83d><main class="page" data-v-3edbe83d><div class="theme-default-content content__default" data-v-3edbe83d><div class="space-header" data-v-1ee8b7a9 data-v-3edbe83d><a href="/" class="home-link router-link-active" data-v-1ee8b7a9>慢慢</a> <div class="links" data-v-1ee8b7a9><span data-v-1ee8b7a9><a href="/" class="site-link router-link-active" data-v-1ee8b7a9>首页</a><span class="dot" data-v-1ee8b7a9>·</span></span><span data-v-1ee8b7a9><a href="/archive/" class="site-link" data-v-1ee8b7a9>归档</a><!----></span></div> <div class="search-box-container" data-v-1ee8b7a9><div class="search-box" data-v-1ee8b7a9><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div></div> <div class="title" data-v-3edbe83d><h3 data-v-3edbe83d>
+          Feb 21, 2022
+        </h3> <h1 data-v-3edbe83d>使用 vuepress 搭建简单博客</h1></div> <div class="content__default" data-v-3edbe83d><p>如何使用 vuepress 搭建一个简单的博客呢？</p> <ul><li><p>使用 vuepress 初始化项目</p></li> <li><p>配置 mini 主题</p></li></ul> <h2 id="创建并进入一个新目录"><a href="#创建并进入一个新目录" class="header-anchor">#</a> 创建并进入一个新目录</h2> <div class="language-sh extra-class"><pre class="language-sh"><code>  <span class="token function">mkdir</span> vuepress-starter <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> vuepress-starter
+</code></pre></div><h2 id="使用包管理器进行初始化"><a href="#使用包管理器进行初始化" class="header-anchor">#</a> 使用包管理器进行初始化</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> init -y
+</code></pre></div><p>输出结果如下：</p> <p><img src="https://user-images.githubusercontent.com/5120964/150900330-4b6d69f4-1fa7-4eed-9c4d-765bb7017466.png" alt="image"></p> <h2 id="将-vuepress-安装在本地"><a href="#将-vuepress-安装在本地" class="header-anchor">#</a> 将 vuepress 安装在本地</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> i -D vuepress
+</code></pre></div><h2 id="创建第一篇文档"><a href="#创建第一篇文档" class="header-anchor">#</a> 创建第一篇文档</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">mkdir</span> docs <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">echo</span> <span class="token string">'# Hello VuePress'</span> <span class="token operator">&gt;</span> docs/README.md
+</code></pre></div><h2 id="在-package-json-中添加一些-scripts"><a href="#在-package-json-中添加一些-scripts" class="header-anchor">#</a> 在 <code>package.json</code> 中添加一些 scripts</h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;docs:dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;docs:build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="在本地启动服务器"><a href="#在本地启动服务器" class="header-anchor">#</a> 在本地启动服务器</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> run docs:dev
+</code></pre></div><p>运行输出结果如下：</p> <p><img src="https://user-images.githubusercontent.com/5120964/150904984-c8dd356b-6820-4499-a79f-923b60d288a3.png" alt="image"></p> <p>浏览器打开 localhost:8080 显示如下：</p> <p><img src="https://user-images.githubusercontent.com/5120964/150905169-3871fee9-9ee6-4308-9485-ce822c36191b.png" alt="image"></p> <h2 id="安装-vuepress-theme-mini"><a href="#安装-vuepress-theme-mini" class="header-anchor">#</a> 安装 vuepress-theme-mini</h2> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> i vuepress-theme-mini -D
+</code></pre></div><h2 id="添加主题配置"><a href="#添加主题配置" class="header-anchor">#</a> 添加主题配置</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// docs/.vuepress/config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">'简单博客'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">discription</span><span class="token operator">:</span> <span class="token string">'通过 vuepress 搭建的简单博客'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">theme</span><span class="token operator">:</span> <span class="token string">'mini'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">themeConfig</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">siteName</span><span class="token operator">:</span> <span class="token string">'我的博客'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">smoothScroll</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">lastUpdated</span><span class="token operator">:</span> <span class="token string">'Last Updated'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">author</span><span class="token operator">:</span> <span class="token string">'lucky8jx'</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">navbar</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">nav</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span> <span class="token literal-property property">text</span><span class="token operator">:</span> <span class="token string">'首页'</span><span class="token punctuation">,</span> <span class="token literal-property property">link</span><span class="token operator">:</span> <span class="token string">'/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span> <span class="token literal-property property">text</span><span class="token operator">:</span> <span class="token string">'归档'</span><span class="token punctuation">,</span> <span class="token literal-property property">link</span><span class="token operator">:</span> <span class="token string">'/archive/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="修改之前创建的第一篇文档-docs-readme-md"><a href="#修改之前创建的第一篇文档-docs-readme-md" class="header-anchor">#</a> 修改之前创建的第一篇文档 <code>docs/README.md</code></h2> <div class="language-md extra-class"><pre class="language-md"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml">layout: Pager</span>
+<span class="token punctuation">---</span></span>
+</code></pre></div><p>在本地重新启动服务器，所得结果如下:</p> <img width="588" alt="1643092589" src="https://user-images.githubusercontent.com/5120964/150924385-46b6736f-d908-44ef-8b37-911d56a67866.png"> <h2 id="新增一篇文章-docs-post-it-xxx-md"><a href="#新增一篇文章-docs-post-it-xxx-md" class="header-anchor">#</a> 新增一篇文章 <code>docs/post/it/xxx.md</code></h2> <div class="language-md extra-class"><pre class="language-md"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml">date: 2022-01-21
+title: vscode 常用快捷方式</span>
+<span class="token punctuation">---</span></span>
+
+以下是我收集到的，我个人感觉比较常用和好用的一些 vscode 快捷方式。
+
+主要包括：
+
+<span class="token list punctuation">-</span> 主命令框
+<span class="token list punctuation">-</span> 编辑器与窗口管理
+<span class="token list punctuation">-</span> 代码编辑
+
+<span class="token comment">&lt;!-- more --&gt;</span>
+....
+</code></pre></div><p>在本地重新启动服务器，所得结果如下:</p> <p><img src="https://user-images.githubusercontent.com/5120964/150926381-e38b5c0a-c591-48e9-839f-4d1575241435.png" alt="image"></p> <h2 id="添加归档页面-docs-archive-readme-md"><a href="#添加归档页面-docs-archive-readme-md" class="header-anchor">#</a> 添加归档页面 <code>docs/archive/README.md</code></h2> <div class="language-md extra-class"><pre class="language-md"><code><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml">layout: Archive
+postsDir: ^/posts/.</span>
+<span class="token punctuation">---</span></span>
+</code></pre></div><p>重启本地服务器，结果如下：</p> <p><img src="https://user-images.githubusercontent.com/5120964/150927067-81d1cd0f-0ed2-4658-820d-3a12dbbefbd3.png" alt="image"></p></div> <!---->  <div class="space-footer" data-v-b8af2878 data-v-3edbe83d><p class="footer-text" data-v-b8af2878>© 2022 lucky8jx</p> <p class="footer-text" data-v-b8af2878>
+    Powered by
+    <a href="https://vuepress.vuejs.org/" target="_blank" data-v-b8af2878>VuePress</a>
+     ·  Theme by
+    <a href="https://github.com/wxsms/vuepress-theme-mini" target="_blank" data-v-b8af2878>mini</a></p></div></div></main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.4472aba4.js" defer></script><script src="/assets/js/layout-Layout.f74fa874.js" defer></script><script src="/assets/js/vendors~layout-Archive~layout-Layout~layout-Page~layout-Pager.3db1fef9.js" defer></script><script src="/assets/js/page-0df79d92.7ebe87ed.js" defer></script>
+  </body>
+</html>
