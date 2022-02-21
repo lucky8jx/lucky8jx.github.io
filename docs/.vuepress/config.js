@@ -1,6 +1,9 @@
 module.exports = {
   title: '记',
   discription: '路漫漫其修远兮，吾将上下而求索',
+  head: [
+    ['link', { rel: 'icon', href: '/img/logo.jpeg' }]
+  ],
   theme: 'mini',
   themeConfig: {
     siteName: '慢慢',
